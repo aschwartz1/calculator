@@ -1,0 +1,84 @@
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-light-grey: #d8d9db;
+  --color-button-hover: #ebebeb;
+  --color-button-active: #bbbcbe;
+  --color-function-button: #df974c;
+  --color-function-button-hover: #dfb07e;
+  --color-function-button-active: #dd8d37;
+
+  --font-stack-monospace: ui-monospace,
+                          Menlo, Monaco,
+                          "Cascadia Mono", "Segoe UI Mono",
+                          "Roboto Mono",
+                          "Oxygen Mono",
+                          "Ubuntu Monospace",
+                          "Source Code Pro",
+                          "Fira Mono",
+                          "Droid Sans Mono",
+                          "Courier New", monospace;
+
+  --width-full: 400px;
+  --width-single-button: calc(var(--width-full) * 0.25);
+  --width-double-button: calc(var(--width-full) * 0.5);
+  --width-triple-button: calc(var(--width-full) * 0.75);
+
+  --height-single-button: var(--width-single-button);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+    width: var(--width-full);
+}
+
+.screen {
+  background: var(--color-black);
+  color: var(--color-white);
+  text-align: right;
+  font-family: var(--font-stack-monospace);
+  width: var(--width-full);
+  height: var(--height-single-button);
+}
+
+.buttons-grid {
+}
+
+.buttons-row {
+  justify-content: center;
+  align-items: center;
+  width: var(--width-full);
+  height: var(--height-single-button);
+  display: flex;
+}
+
+.triple-button {
+  align-items: center;
+  text-align: center;
+  width: var(--width-triple-button);
+}
+
+.double-button {
+  align-items: center;
+  text-align: center;
+  width: var(--width-double-button);
+}
+
+.single-button {
+  align-items: center;
+  text-align: center;
+  width: var(--width-single-button);
+}
+
